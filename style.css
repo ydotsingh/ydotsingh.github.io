@@ -1,0 +1,75 @@
+body{
+    background: #15202b;
+}
+.container{
+    width: 400px;
+    padding: 25px 35px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background: #ccffcc;
+    border-radius: 10px;
+
+}
+
+.container input{
+    width: 95%;
+    height: 35px;
+    border: 1px solid black;
+    outline: 0;
+    padding: 10px;
+    margin: 10px 0 20px;
+    border-radius: 5px;
+}
+.container button{
+    width: 100.5%;
+    height: 50px;
+    background: #15202b;
+    color: #fff;
+    border: 0;
+    outline: 0;
+    border-radius: 5px;
+    box-shadow: 0 10px 10px rgba(0,0,0,0.1);
+    cursor: pointer;
+    margin: 20px 0;
+    font-weight: 500;
+}
+#imgbox{
+    width: 200px;
+    border-radius: 5px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 1.5s;
+}
+#imgbox img{
+    width: 96%;
+    padding: 5px;
+}
+#imgbox.show-img{
+    max-height: 300px;
+    padding-right: 2px;
+    margin: 10px auto;
+    border: 1px solid rgb(164, 162, 162);
+}
+.error{
+    animation: shake 0.1s linear 5;
+
+}
+@keyframes shake{
+    0%{
+        transform: translatex(0);
+    }
+    25%{
+        transform: translatex(-1px);
+    }
+    50%{
+        transform: translatex(0);
+    }
+    75%{
+        transform: translatex(1px);
+    }
+    100%{
+        transform: translatex(0);
+    }
+}
